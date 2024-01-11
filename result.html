@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="generateCharts()">
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/CMlogo.png" alt="">
+            </div>
+           
+        </nav>
+        <div class="blue-banner">
+            <div class="banner-title">
+                <h2>Leadership Styles  </h2>
+            </div>
+            
+        </div>
+        <div class="content-area">
+            <div class="content-wraper">
+                <div class="content">
+                    
+            
+            <table>
+                <tr>
+                <th >Row Labels</th>
+                <th class="">Sum of Points</th>
+                </tr>
+                <tr>
+                    <td class="label">Affiliative</td>
+                    <td class="label-value" id="affiliative-value">value</td>
+                </tr>
+                <tr>
+                    <td class="label">Coaching</td>
+                    <td class="label-value" id="coaching-value">value</td>
+                </tr>
+                <tr>
+                    <td class="label">Directive</td>
+                    <td class="label-value" id="directive-value">value</td>
+                </tr>
+                <tr>
+                    <td class="label">Pacesetting</td>
+                    <td class="label-value" id="pacesetting-value">value</td>
+                </tr>
+                <tr>
+                    <td class="label">Visionary</td>
+                    <td class="label-value" id="visionary-value">value</td>
+                </tr>
+                <tr>
+                    <td class="label">Participative</td>
+                    <td class="label-value" id="participative-value">value</td>
+                </tr>
+                <tr>
+                    <td class="label-end">Grand Total</td>
+                    <td class="label-value-end" id="grand-total">total</td>
+                </tr>
+            </table>
+
+           
+                
+        </div>
+    </div>
+</div>
+
+                <div class="charts">
+                    <div class="piechart-side">
+                        <canvas id="pieChart" ></canvas>
+                    </div>
+                    <div class="barchart-side">
+                        <canvas id="barChart" ></canvas>
+                    </div>
+                </div>
+          
+          
+
+            </div>
+        
+   
+    
+  
+   
+    
+
+  
+
+
+
+<script src="chart.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

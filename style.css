@@ -1,0 +1,247 @@
+
+/* ----------------------- */
+/* -----Reset------------- */
+/* ----------------------- */
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.container a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(0.9375rem);
+    color: hsl( var(--clr-white) );
+    background-color: hsl( var(--clr-dark) );
+    line-height: 1.5;
+    min-height: 100vh;
+    
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    
+    overflow-x: hidden;
+}
+
+/* ----------------------- */
+/* -----Components-------- */
+/* ----------------------- */
+
+
+.container{
+    width: 100%;
+    min-height: 1000px;
+    
+}
+.navbar{
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+}
+.logo>img{
+    height: 50px;
+}
+
+/* blue banner */
+.blue-banner{
+    background-color: rgb(0, 32, 96);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-title{
+    font-size: 22px;
+}
+.banner-icons{
+    display: flex;
+    gap: 20px;
+}
+.banner-icons-item,.banner-icons-item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+}
+.banner-icons-item > img{
+    height: 45px;
+    filter: invert(1);
+}
+.banner-icons-item2 > img{
+    height: 45px;
+    filter: invert(1);
+}
+.minor select{
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 326px) {
+    .blue-banner{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+}
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .banner-title{
+        font-size: 18px;
+    }
+    .banner-icons-item > img{
+        width: 30px;
+    }
+    .banner-icons-item2 > img{
+        height: 30px;
+    }
+    .banner-icons-item,.banner-icons-item2{
+        font-size: 14px;
+    }
+    .blue-banner{
+        gap: 08px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+   
+}
+
+/* Table area */
+.content-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content-wraper{
+    width: 60%;
+    padding: 40px 0;
+}
+.content > p{
+    font-size: 18px;
+    padding: 30px 10px;
+}
+
+.content table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+.content  th{
+    background-color: rgb(68, 114, 196);
+    color: #fff;
+}
+.content  th,.content td {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid black;
+  }
+  
+.content  tr:nth-child(even) {
+    background-color: rgb(217, 217, 217);
+}
+.content td.major {
+    width: 95%;
+    text-align: left;
+}
+
+
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .content-wraper{
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .content  th,.content td {
+        font-size: 16px;
+        padding: 5px;
+      }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .content-wraper{
+        width: 80%;
+    }
+}
+/* Laptop/desktop */
+@media only screen and (min-width: 1025px) {
+
+}
+
+.charts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 400px;
+    padding-inline: 6rem;
+}
+.piechart-side,.barchart-side{
+    width: 50%;
+    
+}
+#pieChart{
+    height: 100%;
+}
+
+#barChart{
+    height: 100%;
+}
+.label-end,.label-value-end{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .charts{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-inline: 1rem;
+    }
+    .piechart-side,.barchart-side{
+       min-height: 250px;
+       width: 100%;
+        
+    }
+}
